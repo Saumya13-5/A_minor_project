@@ -1,0 +1,146 @@
+header{
+    background-color: orange;
+    padding:5px;
+}
+a{
+    font-size: 19px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+a:hover{
+    font-weight: bold;
+    color: aliceblue;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.flip-box {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border: 1px solid #ccc; /* add a 1px solid gray border */
+    border-radius: 10px; /* add a 10px border radius */
+    margin: 20px;
+  }
+  
+  .flip-box-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; /* add a 10px border radius to the front element */
+  }
+  
+  .flip-box-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* add a 10px border radius to the image */
+  }
+  
+  .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 10px; /* add a 10px border radius to the back element */
+  }
+  
+  .flip-box-back p {
+    padding: 20px; /* add some padding to the text */
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    z-index: 2;
+  }
+  
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-inner:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-box-front img {
+    width: 100%; /* make the image take up the full width of the box */
+    height: 100%; /* make the image take up the full height of the box */
+    object-fit: cover; /* scale the image to cover the entire box */
+  }
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    width: 45%;
+    margin: 20px;
+  }
+  
+  .footer-section h2 {
+    margin-top: 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .footer-section a:hover {
+    color: #23527c;
+  }
